@@ -433,3 +433,39 @@
     
     margin-bottom: 0;
 }
+#downbox{
+    height: 0vh;
+    width: 100vw;
+    background-color:#303030;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    position: fixed;
+    bottom: 0;
+}
+#ff{
+    display: flex;
+    align-items: center;
+    padding: 4vh 3vw;
+    
+    
+}
+#help{
+    height: 3vh;
+    width: 26vw;
+    border-radius: 5px;
+    margin-left: 1vw;
+    margin-right:2vw ;
+    border: none;
+    background-color:#202020 ;
+    border: 2px solid #726f6f;
+    
+}
+#more{
+    height: 3vh;
+    width: 18vw;
+    border-radius: 5px;
+    border: none;
+    background-color:#202020 ;
+    border: 2px solid #726f6f;
+    
+}

@@ -1,4 +1,4 @@
-const arr=["Jan","Feb","Mar","April","May","June","July","Aug","sep", "Oct","Nov","Dec"];
+const arr=["Jan","Feb","Mar","Apr","May","June","July","Aug","sep", "Oct","Nov","Dec"];
 let h=document.getElementById("hour");
 let m=document.getElementById("min");
 let date=document.getElementById("day");
@@ -68,8 +68,37 @@ arrowdown.addEventListener('click',()=>{
     
 
     })
+    function scrolldet(){
+   
+    window.onscroll = function() {
+        var lastScroll = 0;
+        let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; 
+    
+        if (currentScroll > 0 && lastScroll <= currentScroll){
+          lastScroll = currentScroll;
+          document.getElementById("downbox").style.height='10vh';
+          document.getElementById("downbox").style.transition='0.7s all ease';
+        }else{
+          lastScroll = currentScroll;
+          document.getElementById("downbox").style.height='0vh';
+          document.getElementById("downbox").style.transition='0.7s all ease';
+        }
+    };
+}
 
+scrolldet();
 
+    
+  
+  
+  
+
+  
+   
+    
+
+ 
+    
 
 
 
